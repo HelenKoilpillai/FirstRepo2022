@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Regression">
+  <parameter name ="browsername" value="chrome"/>
+    <classes>
+      <class name="com.salesforce.test.tests.AutomationScripts">
+   <methods>
+   <include name="loginwithvalidCredentials02"/>
+<include name="loginErrorMessage01"/>
+<include name="checkRememberMe03"/>
+<include name="forgotPassword4A"/>
+<include name="wrongCredential4B"/>
+<include name="logoutFromSalesForce"/>
+   </methods>
+   </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
